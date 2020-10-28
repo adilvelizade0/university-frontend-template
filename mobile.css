@@ -1,0 +1,221 @@
+div#content nav {
+    display: none;
+}
+
+#content {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .titleSection h1 {
+        font-size: 2rem !important;
+    }
+
+    .titleSection h3 {
+        font-size: 1.5rem !important;
+    }
+
+    .titleSection {
+        margin-top: 60px !important;
+        margin-bottom: 30px !important;
+    }
+
+    #aboutUs i {
+        font-size: 60px !important;
+    }
+
+    #aboutUs h1 {
+        font-size: 1.5rem;
+    }
+
+    #newandsearch .moreBtn button {
+        min-width: 20.5rem;
+    }
+
+    .socialMedia {
+        font-size: 1.5rem !important;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #footerContent form {
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+
+
+    .socialContent {
+        background-color: black;
+    }
+
+    #footerContent .row {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .newsMail {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .footerBottom span {
+        font-size: 1rem !important;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    /* For mobile phones: */
+
+    #lastPost a.btn-primary {
+        min-width: 20.5rem;
+    }
+
+    #notification a.btn-primary {
+        min-width: 20.5rem;
+    }
+
+    .moreBtn a.btn-primary {
+        min-width: 20.5rem;
+    }
+
+    .moreBtn button {
+        min-width: 20.5rem;
+    }
+
+
+
+    #content {
+        display: block;
+    }
+
+
+    #lastNews .card-img {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    nav#topNavbar {
+        display: none;
+    }
+
+    section#headerImg {
+        min-height: 60vh !important;
+    }
+
+    section#headerImg h1 {
+        font-size: 40px;
+    }
+
+
+    section#headerImg div {
+        min-height: 60vh !important;
+    }
+
+    nav#sidebar {
+        display: block !important;
+        background-color: #172749 !important;
+    }
+
+    button#sidebarCollapse {
+        display: block !important;
+        border-radius: 0px;
+        background-color: #343a40 !important;
+        border: 0px;
+        font-size: 20px;
+    }
+
+    .overlay {
+        display: none;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 998;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .overlay.active {
+        display: block;
+        opacity: 1;
+    }
+
+    div#content nav {
+        display: block;
+    }
+
+    div#horizontalMenu {
+        display: none;
+    }
+
+    div#slideImageSize img {
+        height: 230px !important;
+        width: 100%;
+    }
+
+    a.carousel-control-prev,
+    a.carousel-control-next {
+        width: 10%;
+    }
+
+}
+
+/* Horizontal Menu */
+
+@media screen and (max-width: 52.75em) {
+
+    .cbp-hrmenu {
+        font-size: 80%;
+    }
+
+}
+
+@media screen and (max-width: 43em) {
+
+    .cbp-hrmenu {
+        font-size: 120%;
+        border: none;
+    }
+
+    .cbp-hrmenu>ul,
+    .cbp-hrmenu .cbp-hrsub-inner {
+        width: 100%;
+        padding: 0;
+    }
+
+    .cbp-hrmenu .cbp-hrsub-inner {
+        padding: 0 2em;
+        font-size: 75%;
+    }
+
+    .cbp-hrmenu>ul>li {
+        display: block;
+        border-bottom: 4px solid #47a3da;
+    }
+
+    .cbp-hrmenu>ul>li>a {
+        display: block;
+        padding: 1em 3em;
+    }
+
+    .cbp-hrmenu .cbp-hrsub {
+        position: relative;
+    }
+
+    .cbp-hrsub h4 {
+        padding-top: 0.6em;
+    }
+
+}
+
+@media screen and (max-width: 36em) {
+    .cbp-hrmenu .cbp-hrsub-inner>div {
+        width: 100%;
+        float: none;
+        padding: 0 2em;
+    }
+}

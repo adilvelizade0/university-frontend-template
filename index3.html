@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Ana Səyifə</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="default.css">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="sidebar.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <!-- Font Awesome JS -->
+    <script src="https://kit.fontawesome.com/fce9d6e816.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="padding: 0px; z-index: 2;" id="topNavbar">
+        <div style="display: inline-block;">
+            <a class="navbar-brand" href="#" style="padding: 0px 15px;"><img src="img/unnamed.png" alt="" width="10%">
+                Azərbaycan Texniki Universiteti</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#">Ana səhifə</a>
+                <a class="nav-item nav-link" href="#">Elanlar</a>
+                <a class="nav-item nav-link" href="#">Xəbərlər</a>
+                <a class="nav-item nav-link" href="#">Rektora müraciət</a>
+                <a href="#" class="nav-item nav-link" id="loginBtn">Daxil ol</a>
+                <a href="#" class="nav-item nav-link"><i class="fas fa-search"></i></a>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid sticky-top" id="horizontalMenu" style="z-index: 1;">
+        <div class="main">
+            <nav id="cbp-hrmenu" class="cbp-hrmenu d-flex justify-content-center mt-0">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fas fa-list"></i> AzTU haqqında <i class="fa fa-caret-down"
+                                aria-hidden="true"></i></a>
+                        <div class="cbp-hrsub">
+                            <div class="cbp-hrsub-inner">
+                                <div class="altMenuItems">
+                                    <ul class="d-flex  flex-wrap">
+                                        <li>
+                                            <a href="#">Universitetin tarixi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Rektor</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Prorektorlar</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Milli qəhramanlarımız</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Fəxri məzunlarımız</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Fəxri doktorlarımız</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Rektorlarımız</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Qaleriya</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- /cbp-hrsub-inner -->
+                        </div><!-- /cbp-hrsub -->
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-school"></i> Struktur <i class="fa fa-caret-down"
+                                aria-hidden="true"></i></a>
+                        <div class="cbp-hrsub">
+                            <div class="cbp-hrsub-inner">
+                                <div class="altMenuItems">
+                                    <ul class="d-flex  flex-wrap">
+                                        <li>
+                                            <a href="#">Elmi şura</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">İctimai şura</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Tədris hissəsi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Fakultələr</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Kafedralar</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Magistratura və doktorantura </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Beynəlxalq əlaqələr </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Bakı Texniki Kolleci</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+                            </div><!-- /cbp-hrsub-inner -->
+                        </div><!-- /cbp-hrsub -->
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-graduation-cap"></i> Təhsil <i class="fa fa-caret-down"
+                                aria-hidden="true"></i></a>
+                        <div class="cbp-hrsub">
+                            <div class="cbp-hrsub-inner">
+                                <div class="altMenuItems">
+                                    <ul class="d-flex  flex-wrap">
+                                        <li>
+                                            <a href="#">Akademik təhsil</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Təkrar ali təhsil</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- /cbp-hrsub-inner -->
+                        </div><!-- /cbp-hrsub -->
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-users"></i> Sosial fəaliyyətlər <i class="fa fa-caret-down"
+                                aria-hidden="true"></i></a>
+                        <div class="cbp-hrsub">
+                            <div class="cbp-hrsub-inner">
+                                <div class="altMenuItems">
+                                    <ul class="d-flex  flex-wrap">
+                                        <li>
+                                            <a href="#">Həmkarlar İttifaqı komitəsi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Tələbə Gənclər Təşkilatı</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">İctimaiyyətlə əlaqələr şöbəsi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Qadınlar şurası</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Tələbə Gənclər Təşkilatı</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- /cbp-hrsub-inner -->
+                        </div><!-- /cbp-hrsub -->
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-clipboard-check"></i> Elmi fəaliyyətlər <i class="fa fa-caret-down"
+                                aria-hidden="true"></i></a>
+                        <div class="cbp-hrsub">
+                            <div class="cbp-hrsub-inner">
+                                <div class="altMenuItems">
+                                    <ul class="d-flex  flex-wrap">
+                                        <li>
+                                            <a href="#">Tədqiqat və inkişaf şöbəsi</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Texnoloji transfer şöbəsi</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- /cbp-hrsub-inner -->
+                        </div><!-- /cbp-hrsub -->
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-globe-asia"></i> Beynəlxalq qəbul <i class="fa fa-caret-down"
+                                aria-hidden="true"></i></a>
+                        <div class="cbp-hrsub">
+                            <div class="cbp-hrsub-inner">
+                                <div class="altMenuItems">
+                                    <ul class="d-flex  flex-wrap">
+                                        <li>
+                                            <a href="#">Bakalavriat</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Magistratura</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Doktorantura</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- /cbp-hrsub-inner -->
+                        </div><!-- /cbp-hrsub -->
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-book"></i> E-Kitabxana <i class="fa fa-caret-down"
+                                aria-hidden="true"></i></a>
+                        <div class="cbp-hrsub">
+                            <div class="cbp-hrsub-inner">
+                                <div class="altMenuItems">
+                                    <ul class="d-flex  flex-wrap">
+                                        <li>
+                                            <a href="#">AzTU-nun elektron kitabxanasına giriş</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div><!-- /cbp-hrsub-inner -->
+                        </div><!-- /cbp-hrsub -->
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-address-book"></i> Əlaqə</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="wrapper sticky-top">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+
+            <div class="sidebar-header mr-5">
+                <div class="input-group">
+                    <input type="search" class="form-control" placeholder="axtar" aria-label="Recipient's username"
+                        aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="submit" id="button-addon2"><i
+                                class="fas fa-search" style="color: white;"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#"><i class="fas fa-home"></i> Ana Səhifə</a>
+                </li>
+
+                <li>
+                    <a href="#"><i class="far fa-newspaper"></i> Xəbərlər</a>
+                </li>
+                <li>
+                    <a href="#"><i class="far fa-paper-plane"></i> Rektora müraciət</a>
+                </li>
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fas fa-list"></i> AzTU
+                        haqqında <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Universitetin tarixi</a>
+                        </li>
+                        <li>
+                            <a href="#">Rektor</a>
+                        </li>
+                        <li>
+                            <a href="#">Prorektorlar</a>
+                        </li>
+                        <li>
+                            <a href="#">Milli qəhramanlarımız</a>
+                        </li>
+                        <li>
+                            <a href="#">Fəxri məzunlarımız</a>
+                        </li>
+                        <li>
+                            <a href="#">Fəxri doktorlarımız</a>
+                        </li>
+                        <li>
+                            <a href="#">Rektorlarımız</a>
+                        </li>
+                        <li>
+                            <a href="#">Qaleriya</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fas fa-school"></i>
+                        Struktur <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Elmi şura</a>
+                        </li>
+                        <li>
+                            <a href="#">İctimai şura</a>
+                        </li>
+                        <li>
+                            <a href="#">Tədris hissəsi</a>
+                        </li>
+                        <li>
+                            <a href="#">Fakultələr</a>
+                        </li>
+                        <li>
+                            <a href="#">Kafedralar</a>
+                        </li>
+                        <li>
+                            <a href="#">Magistratura və doktorantura </a>
+                        </li>
+                        <li>
+                            <a href="#">Beynəlxalq əlaqələr </a>
+                        </li>
+                        <li>
+                            <a href="#">Bakı Dövlət Rabitə və Nəqliyyat kolleci </a>
+                        </li>
+                        <li>
+                            <a href="#">Bakı Texniki Kolleci</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#TSubmenu" data-toggle="collapse" aria-expanded="false"><i
+                            class="fas fa-graduation-cap"></i> Təhsil <i class="fa fa-caret-down"
+                            aria-hidden="true"></i></a>
+                    <ul class="collapse list-unstyled" id="TSubmenu">
+                        <li>
+                            <a href="#">Akademik təhsil</a>
+                        </li>
+                        <li>
+                            <a href="#">Təkrar ali təhsil</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#sosialSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fas fa-users"></i>
+                        Sosial fəaliyyətlər <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <ul class="collapse list-unstyled" id="sosialSubmenu">
+                        <li>
+                            <a href="#">Həmkarlar İttifaqı komitəsi</a>
+                        </li>
+                        <li>
+                            <a href="#">Tələbə Gənclər Təşkilatı</a>
+                        </li>
+                        <li>
+                            <a href="#">İctimaiyyətlə əlaqələr şöbəsi</a>
+                        </li>
+                        <li>
+                            <a href="#">Qadınlar şurası</a>
+                        </li>
+                        <li>
+                            <a href="#">Tələbə Gənclər Təşkilatı</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#eSubmenu" data-toggle="collapse" aria-expanded="false"><i
+                            class="fas fa-clipboard-check"></i> Elmi fəaliyyətlər <i class="fa fa-caret-down"
+                            aria-hidden="true"></i></a>
+                    <ul class="collapse list-unstyled" id="eSubmenu">
+                        <li>
+                            <a href="#">Tədqiqat və inkişaf şöbəsi</a>
+                        </li>
+                        <li>
+                            <a href="#">Texnoloji transfer şöbəsi</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#bSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fas fa-globe-asia"></i>
+                        Beynəlxalq qəbul <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <ul class="collapse list-unstyled" id="bSubmenu">
+                        <li>
+                            <a href="#">Bakalavriat</a>
+                        </li>
+                        <li>
+                            <a href="#">Magistratura</a>
+                        </li>
+                        <li>
+                            <a href="#">Doktorantura</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#eBookSubmenu" data-toggle="collapse" aria-expanded="false"><i class="fas fa-book"></i>
+                        E-Kitabxana <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <ul class="collapse list-unstyled" id="eBookSubmenu">
+                        <li>
+                            <a href="#">AzTU-nun elektron kitabxanasına giriş</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fas fa-address-book"></i> Əlaqə</a></li>
+                <li style="border: 0px; padding-top: 10px;"><a href="#" class="btn btn-success d-block p-2"
+                        id="signBtn"><i class="fas fa-sign-out-alt"></i> Daxil
+                        ol</a></li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <nav class="navbar d-flex justify-content-between" style="background-color: white;">
+                <div style="display: inline-block">
+                    <a href="#" class="navbar-brand" style="font-size: 15px;"><img src="img/unnamed.png" alt="aztu"
+                            width="15%"> Azərbaycan Texniki Universiteti</a>
+                </div>
+
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-align-justify"></i>
+                </button>
+            </nav>
+        </div>
+    </div>
+    <section id="headerImg" class="d-flex justify-content-center align-items-center">
+        <div></div>
+        <h1>Azərbaycan Texniki Universiteti</h1>
+    </section>
+
+
+
+
+    <!-- Section Page -->
+    <section class="titleSection">
+        <h1 class="text-center">AzTU-da bu gün</h1>
+        <h3 class="text-center">AzTU-dan ən son xəbərlər</h3><br>
+    </section>
+
+    <div class="container mt-3 mb-5" id="lastPost">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="#">
+                    <div class="card" id="lastNews">
+                        <img src="img/download.jpg" alt="" class="card-img p-3" width="370" height="222">
+                        <div class="card-body">
+                            <p style="color: black;"><b>AzTU ilə Bestcomp Group şirkəti arasında əməkdaşlıq memorandumu
+                                    imzalandı</b></p>
+                            <span class="pt-3"><i class="fas fa-history"></i> 27.07.2020</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="#">
+                    <div class="card" id="lastNews">
+                        <img src="img/download.jpg" alt="" class="card-img p-3" width="370" height="222">
+                        <div class="card-body">
+                            <p style="color: black;"><b>AzTU ilə Bestcomp Group şirkəti arasında əməkdaşlıq memorandumu
+                                    imzalandı</b></p>
+                            <span class="pt-3"><i class="fas fa-history"></i> 27.07.2020</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <a href="#">
+                    <div class="card" id="lastNews">
+                        <img src="img/download.jpg" alt="" class="card-img p-3" width="370" height="222">
+                        <div class="card-body">
+                            <p style="color: black;"><b>AzTU ilə Bestcomp Group şirkəti arasında əməkdaşlıq memorandumu
+                                    imzalandı</b></p>
+                            <span class="pt-3"><i class="fas fa-history"></i> 27.07.2020</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+        <div class="mt-3 d-flex justify-content-center">
+            <a href="#" class="btn btn-primary mt-5">Bütün xəbərlər</a>
+        </div>
+    </div>
+
+    <!--Notification -->
+    <section class="titleSection" style="margin-top: 5rem; margin-bottom: 3rem;">
+        <h3 class="text-center"><i class="far fa-calendar-alt"></i> AzTU-dan ən son bildirişlər</h3><br>
+    </section>
+    <div class="container">
+        <div id="notification">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col">
+                            <a href="#" class="notin">
+                                <div class="card w-100 notification">
+                                    <div class="card-body">
+                                        <span><i class="far fa-calendar-check"></i> 24.07.2020</span>
+                                        <p>Türkiyədə təhsil almaq istəyənlərin nəzərinə!</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="#" class="notin">
+                                <div class="card w-100 notification">
+                                    <div class="card-body">
+                                        <span><i class="far fa-calendar-check"></i> 24.07.2020</span>
+                                        <p>Türkiyədə təhsil almaq istəyənlərin nəzərinə!</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="#" class="notin">
+                                <div class="card w-100 notification">
+                                    <div class="card-body">
+                                        <span><i class="far fa-calendar-check"></i> 24.07.2020</span>
+                                        <p>Türkiyədə təhsil almaq istəyənlərin nəzərinə!</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <a href="#" class="notin">
+                                <div class="card w-100 notification">
+                                    <div class="card-body">
+                                        <span><i class="far fa-calendar-check"></i> 24.07.2020</span>
+                                        <p>Türkiyədə təhsil almaq istəyənlərin nəzərinə!</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-3 d-flex justify-content-center">
+                        <a href="#" class="btn btn-primary mt-5">Bütün bildirişlər</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- AzTU About -->
+    <div class="container-fluid py-1  w-100" style="background-color: white; margin-top: 5rem;">
+        <section class="titleSection" style="margin-top: 25px !important; margin-bottom: 25px;">
+            <h1 class="text-center">AzTU haqqında</h1>
+            <h3 class="text-center">İl,Tələbə,Korpus</h3><br>
+        </section>
+        <div class="row mb-3" id="aboutUs">
+            <div class="col-4 d-flex justify-content-center my-2">
+                <div>
+                    <i class="fas fa-clock text-center" style="font-size: 100px;"></i>
+                    <h1 class="text-center mt-2">1950</h1>
+                </div>
+            </div>
+            <div class="col-4   d-flex justify-content-center my-2">
+                <div>
+                    <i class="fas fa-user-graduate text-center" style="font-size: 100px;"></i>
+                    <h1 class="text-center mt-2">999+</h1>
+                </div>
+            </div>
+            <div class="col-4  d-flex justify-content-center my-2">
+                <div>
+                    <i class="far fa-building text-center" style="font-size: 110px;"></i>
+                    <h1 class="text-center mt-2">8</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-3 d-flex justify-content-center moreBtn">
+        <a href="#" class="btn btn-primary mt-5">Daha ətraflı</a>
+    </div>
+
+    <section class="titleSection">
+        <h1 class="text-center">Yenilikler ve Tedqiqatlar</h1>
+    </section>
+    <div class="container" id="newandsearch">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/gallery/konullu.jpg" alt="" class="card-img">
+                    <div class="card-body">
+                        <h5 class="card-title">“Bir” Tələbə-Könüllü Proqramı</h5>
+                        <p class="card-text">
+                            “Bir” Tələbə-Könüllü Proqramı öz fəaliyyətini 6 müxtəlif istiqamət ilə
+                            həyata keçirir. İstiqamətlər tələbə-könüllülərin asudə vaxtının səmərəli keçirməsinə,
+                            onların müxtəlif sahələrdə təcrübə qazanmasına, bilik və bacarıqlarının artırılmasına,
+                            tələbə həyatını rəngarəng yaşamasına və əyləncəli vaxt keçirilməsinə şərait yaradır. Bu
+                            istiqamətlərdən biri də ÖYRƏN adlanır. İstiqamət tələbə-könüllülərə bu həyatı öyrənərək
+                            yaşamağa dəvət edir. Müntəzəm xarakter daşıyacaq planlaşdırılmış layihələr çərçivəsində
+                            tələbələr müxtəlif sahələr və mövzular üzrə geniş biliklərə və zəruri bacarıqlara
+                            yiyələnəcəklər.</p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center"
+                        style="border-radius: 0; background-color: white; border: 0px;">
+                        <a href="#">Daha ətraflı</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/gallery/creng.jpg" alt="" class="card-img">
+                    <div class="card-body">
+                        <h5 class="card-title">CRENG “Crisis and Risks Engineering for Transport Services”</h5>
+                        <p class="card-text">
+                            To support the development of Crisis and Risks Engineering for transport services (CRENG) to
+                            ensure sustainability of Ukraine (UA), Azerbaijan (AZ) and Turkmenistan (TM) transport
+                            systems for their integration into Global transportation network. To contribute CRENG
+                            development in PCs the project will create the environment for education of high skilled
+                            specialists in line with labor market and according to EU best practices and Bologna
+                            process. </p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center"
+                        style="border-radius: 0; background-color: white; border: 0px;">
+                        <a href="#">Daha ətraflı</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <img src="img/gallery/sabah_logo.jpg" alt="" class="card-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Sabah Qrupları layihəsi</h5>
+                        <p class="card-text">
+                            <ol class="text-muted">
+                                <li>Sürətlə inkişaf edən iqtisadiyyat və yüksək ixtisaslı mütəxəssislərə olan ehtiyac.
+                                </li>
+                                <li>Ali təhsil sahəsində dünyanın aparıcı universitetləri ilə əməkdaşlıq layihələri –
+                                    elmi tədqiqat, təcrübə və tələbə mübadilələrinin; genişləndirilməsi.</li>
+                                <li>Mövcud proqramların təkmilləşdirilməsi və əmək bazarının tələblərinə
+                                    uyğunlaşdırılması.</li>
+                                <li>Azərbaycan gəncləri üçün yeni imkanların yaradılması, onları fərdi və peşəkar
+                                    inkişafına dəstək.</li>
+                            </ol>
+                        </p>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center"
+                        style="border-radius: 0; background-color: white; border: 0px;">
+                        <a href="#">Daha ətraflı</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="moreDiv">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="img/gallery/uniclad.jpg" alt="" class="card-img">
+                        <div class="card-body">
+                            <h5 class="card-title">“İnnovasiya və dayanıqlılıq prinsipləri ilə klasterlərin işlənməsinə
+                                başlamaqda və iştirakda universitetlərin potensialının artırılması” Layihəsi (UniClaD)
+                            </h5>
+                            <p class="card-text"> Aqro-sənaye klasterlərinin əsas hissəsi kimi universitetlərin
+                                potensialının inkişaf
+                                etdirilməsi. Aqro –sənaye klasterlərin işlənib hazırlanması və uğurla fəaliyyət
+                                göstərməsinə
+                                ilkin şərt kimi innovasiya mərkəzlərinin yaradılması.</p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-center"
+                            style="border-radius: 0; background-color: white; border: 0px;">
+                            <a href="#">Daha ətraflı</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="img/gallery/erasmus.jpg" alt="" class="card-img">
+                        <div class="card-body">
+                            <h5 class="card-title">Erazmus plus namizədi N° 561732-EPP-1-2015-1-FR-EPPKA2-CBHE-JP</h5>
+                            <p class="card-text"> « Rusiya Federasiyası, Çin və Azərbaycanda binaların enerji və ətraf
+                                mühit
+                                səmərəliliyi üzrə açıq və distant təhsil formatında peşə bakalavrı» <br>
+                                Təklif olunan Tərəfdaş ölkələrdə ali təhsil sisteminin modernləşdirilməsinə,mümkünlüyünə
+                                və
+                                beynəlmləşdirilməsinə dəstək göstərmək , Avropa İttifaqı ali təhsil məkanında baş verən
+                                evolyusiyaya könüllü olaraq uyğunlaşmağa köməklik göstərmək.
+                            </p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-center"
+                            style="border-radius: 0; background-color: white; border: 0px;">
+                            <a href="#">Daha ətraflı</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="img/gallery/mevlane.jpg" alt="" class="card-img">
+                        <div class="card-body">
+                            <h5 class="card-title">Mövlana Mübadilə Proqramı</h5>
+                            <p class="card-text">
+                                Mövlana Mübadilə Proqramı (Mevlana Değişim Programı) Türkiyənin ali təhsil qurumları ilə
+                                digər dünya ölkələrinin ali təhsil müəssisələri arasında tələbə və müəllim mübadiləsini
+                                həyata keçirən bir proqramdır. 23 avqust 2011-ci tarixdə Türkiyə Cümhuriyyətində rəsmi
+                                elan
+                                edilmiş və 2013-cü ildən başlayaraq fəaliyyət göstərməkdədir.
+                                Mövlana Mübadilə Proqramına qatılmaq istəyən tələbələr ən azı bir, ən çoxu iki semestr,
+                                müəllimlər isə bir tədris ilində ən azı 1 həftə, ən çoxu 3 ay Türkiyənin
+                                universitetlərində
+                                oxumaq və dərs vermək imkanına malik olacaqlar.
+                            </p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-center"
+                            style="border-radius: 0; background-color: white; border: 0px;">
+                            <a href="#">Daha ətraflı</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="img/gallery/11-new.png" alt="" class="card-img">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Akkreditasiya olunmuş ixtisaslar
+                            </h5>
+                            <p class="card-text">
+                                Dokumente der akkreditierten Bachelor - und Masterstudiengaengen
+                                an den drei Aserbaidschanischen Universitaeten: AzTU-Baku, ASOIU-Baku und SUS-Sumgayit
+                                Im Rahmen des Tempusprojektes: 516678-TEMPUS-1-2011-1-DE-TEMPUS-JPCR
+                                Tempus layihəsi çərçivəsində Aztu -da elektroenegetika mühəndisliyi və proseslərin
+                                avtomatlaşdırılması mühəndiliyi ixtisasları beynəlxalq akriditasiyadan (ASİİN)
+                                keçmişdir.
+
+                            </p>
+                        </div>
+                        <div class="card-footer d-flex justify-content-center"
+                            style="border-radius: 0; background-color: white; border: 0px;">
+                            <a href="#">Daha ətraflı</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-3 d-flex justify-content-center moreBtn">
+            <button class="btn btn-primary mt-5">Daha çox göstər</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container mt-5">
+            <div class="row" id="footerContent">
+                <div class="col-lg-3 col-12">
+                    <div class="row">
+                        <h5>CƏLD KEÇİD</h5>
+                    </div>
+                    <div class="row"><a href="#"> E-imtahan</a></div>
+                    <div class="row"><a href="#">E-kitabxana</a></div>
+                    <div class="row"><a href="#">E-kataloq</a></div>
+                    <div class="row"><a href="#">E-qəzet</a></div>
+                    <div class="row">
+                        <h5>QƏBUL</h5>
+                    </div>
+                    <div class="row"><a href="#">Hazırlıq</a></div>
+                    <div class="row"><a href="#">Bakalavr</a></div>
+                    <div class="row"><a href="#">Magistr</a></div>
+                    <div class="row"><a href="#">Doktrantura</a></div>
+
+                </div>
+                <div class="col-lg-3 col-12">
+                    <div class="row">
+                        <h5>BÖLMƏLƏR</h5>
+                    </div>
+                    <div class="row"><a href="">Fakultələr</a></div>
+                    <div class="row"><a href="">Kafedralar</a></div>
+                    <div class="row"><a href="">TGT</a></div>
+                    <div class="row"><a href="">Xarici Əlaqələr</a></div>
+                    <div class="row">
+                        <h5>STRUKTUR</h5>
+                    </div>
+                    <div class="row"><a href="">Rektor</a></div>
+                    <div class="row"><a href="">Prorektorlar</a></div>
+                    <div class="row"><a href="">Həmkarlar</a></div>
+                    <div class="row"><a href="">Elmi Şura</a></div>
+                </div>
+                <div class="col-lg-3 col-12">
+                    <div class="row">
+                        <h5>ÜMUMİ</h5>
+                    </div>
+                    <div class="row"><a href="">Tələbə həyatı</a></div>
+                    <div class="row"><a href="">Akademik təqvim</a></div>
+                    <div class="row"><a href="">Tədbirlər</a></div>
+                    <div class="row"><a href="">Saytın xəritəsi</a></div>
+                    <div class="row">
+                        <h5>E-SİSTEMLƏR</h5>
+                    </div>
+                    <div class="row"><a href="">Bakalavr Akademik Təhsil</a></div>
+                    <div class="row"><a href="">Magistr Akademik Təhsil</a></div>
+                    <div class="row"><a href="">Distant Təhsil</a></div>
+                    <div class="row"><a href="">GroupWare</a></div>
+                </div>
+
+                <div class="col-lg-3 col-12">
+                    <div class="row">
+                        <h5>Bizimlə Əlaqə</h5>
+                    </div>
+
+                    <div class="row mb-2">
+                        <i class="fas fa-phone-alt mr-2"></i><span> Tel: (+994 12) 538-33-83</span>
+                    </div>
+                    <div class="row mb-2">
+                        <i class="fas fa-fax mr-2"></i><span> Fax: (+994 12) 538-32-80</span>
+                    </div>
+                    <div class="row mb-2">
+                        <i class="fas fa-envelope mr-2"></i><a href="#"> Email: aztu@aztu.edu.az</a>
+                    </div>
+                    <div class="row mb-2">
+                        <i class="fas fa-phone-volume mr-2"></i><span> Qaynar xətt: (+994 12) 539-13-05</span>
+                    </div>
+
+                    <div class="row">
+                        <h5>XƏBƏRLƏR</h5>
+                    </div>
+                    <div class="row">
+                        <span class="mb-2">E-mail vasitəsi ilə xəbərlərə üzv ola bilərsiniz.</span>
+                    </div>
+                    <div class="row">
+                        <form action="#">
+                            <div class="input-group is-invalid">
+                                <div class="custom-file">
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                        aria-describedby="emailHelp" placeholder="Email">
+                                </div>
+                                <div class="input-group-append">
+                                    <button class="btn btn-success" type="submit">Göndər</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom mt-3 container-fluid">
+            <div class="row">
+                <div class="col-lg-8 col-sm-12 d-flex justify-content-start">
+                    <span class="p-3">Copyright &#169; 2020 Azərbaycan Texniki Universiteti. Bütün Hüquqlar
+                        qorunur.</span>
+                </div>
+                <div class="col-lg-4 col-sm-12 d-flex justify-content-end socialContent">
+                    <div class="socialMedia pr-3" style="font-size: 2rem;">
+                        <a href="#"><i class="fab fa-facebook-square"></i></a>
+                        <a href="#"><i class="fab fa-instagram-square"></i></a>
+                        <a href="#"><i class="fab fa-twitter-square"></i></a>
+                        <a href="#"><i class="fab fa-youtube-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="overlay"></div>
+
+
+    <!-- Bootstrap CDN-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+    <!-- jQuery Custom Scroller CDN -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js">
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+    <script src="app.js"></script>
+
+    <script>
+        $(function () {
+            cbpHorizontalMenu.init();
+        });
+    </script>
+</body>
+
+</html>
